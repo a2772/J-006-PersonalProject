@@ -16,13 +16,52 @@ import java.util.Locale;
 public class PseudoMain {
 
     public static void main(String[] args) {
-        var builder = new StringBuilder("54321");
-        var a = builder.substring(2);
-        System.out.println(a);
-        System.out.println(builder.charAt(1));
+
     }
 
     public static class Prueba {
+
+        public static void brujeria001() {
+            var plan = 1;
+            plan = plan++ + --plan;
+            plan = 1;
+            plan = --plan + plan++;
+            plan = 1;
+            plan = --plan + --plan;
+            plan = 1;
+            plan = --plan + --plan + plan++;
+            plan = 1;
+            plan = --plan + plan;
+
+            if (plan == 1) {
+                System.out.println("Plan A");
+            } else {
+                if (plan == 2) {
+                    System.out.println("Plan B");
+                }
+            }
+        }
+
+        public static void isInteger(Object variable) {
+            int m = 0, n = 0;
+            while (m < 5) {
+                n++;
+                if (m == 3) {
+                    continue;
+                }
+
+                switch (m) {
+                    case 0:
+                    case 1:
+                        n++;
+                    default:
+                        n++;
+                }
+                m++;
+            }
+            System.out.println(m + " " + n);
+            System.out.println(variable instanceof Integer);
+        }
 
         public static void test006() {
             var happy = " :) - (: ";
