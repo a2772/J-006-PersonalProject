@@ -1,9 +1,14 @@
 package com.test.main;
 
 import com.test.main.classes.Airplane;
+import com.test.main.classes.Camion;
 import com.test.main.classes.Player;
 import com.test.main.classes.PlayerAgeComparator;
 import com.test.main.classes.PlayerRankingComparator;
+import com.test.main.classes.VehiculoCarga;
+import com.test.main.interfaces.Vehiculo;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,18 +17,78 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 
 public class PseudoMain {
-
-    public static void main(String[] args) {
-
+    public static void main(String[] data) {
+        Vehiculo camion = new Camion();
+        ((VehiculoCarga)camion).ingresaCarga();
     }
-
+    
     public static class Prueba {
+        
+        public static void test012(){
+            Random rnd = new Random(System.currentTimeMillis());
+            System.out.println(rnd.nextInt() % 2 == 0);
+        }
+
+        public static void test011() throws FileNotFoundException {
+            FileReader file = new FileReader("somefile.txt");
+        }
+
+        public static void test010() {
+            letters:
+            for (char ch = 'a'; ch <= 'z'; ch++) {
+                numbers:
+                for (int n = 0; n <= 10; n++) {
+                    System.out.println(ch);
+                    continue letters;
+                }
+            }
+        }
+
+        public static void test009() {
+            var bottles = List.of("glass", "plastic", "can");
+            for (int type = 1; type < bottles.size();) {
+                System.out.print(bottles.get(type) + "-");
+                if (type < bottles.size()) {
+                    break;
+                }
+            }
+            System.out.print("end");
+        }
+
+        public static void test008(String[] circus) {
+            for (var i = 0; i < circus.length; i++) {
+                System.out.print(circus[circus.length - i - 1]);
+            }
+        }
+
+        public static void test007() {
+            var race = "";
+            do {
+                race += "x";
+                break;
+            } while (true);
+            System.out.println(race);
+        }
 
         public static void brujeria001() {
             var plan = 1;
+            var ta = 1;
+            ta = plan++;
+            System.out.println(plan);
+            ta = 1;
+            plan = 1;
             plan = plan++ + --plan;
+            plan = 1;
+            ta = plan++ + plan++ + 0;
+            plan++;
+            System.out.println(plan);
+            ta = 1;
+            plan = 2;
+            plan = plan++;
+            plan = plan;
             plan = 1;
             plan = --plan + plan++;
             plan = 1;
