@@ -6,7 +6,12 @@ package com.test.main.classes;
 
 import com.test.main.interfaces.Vehiculo;
 
-public class Camion extends VehiculoCarga {
+public class Camion extends VehiculoCarga{
+    
+    public Camion(double nivelGasolina){
+        super(nivelGasolina);
+        int a;
+    }
 
     public void ingresaCarga() {
         System.out.println("Ingresando carga Camion");

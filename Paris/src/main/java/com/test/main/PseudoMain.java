@@ -2,9 +2,15 @@ package com.test.main;
 
 import com.test.main.classes.Airplane;
 import com.test.main.classes.Camion;
+import com.test.main.classes.Color;
+import com.test.main.classes.EspirituSanto;
+import com.test.main.classes.Hijo;
+import com.test.main.classes.Padre;
+import com.test.main.classes.Pintura;
 import com.test.main.classes.Player;
 import com.test.main.classes.PlayerAgeComparator;
 import com.test.main.classes.PlayerRankingComparator;
+import com.test.main.classes.Robot;
 import com.test.main.classes.VehiculoCarga;
 import com.test.main.interfaces.Vehiculo;
 import java.io.FileNotFoundException;
@@ -19,15 +25,97 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-public class PseudoMain {
+public class PseudoMain extends PruebasHerencia {
+
+    boolean valor;
+    public int a;
+
     public static void main(String[] data) {
-        Vehiculo camion = new Camion();
-        ((VehiculoCarga)camion).ingresaCarga();
+        PseudoMain ps = new PseudoMain();
+        System.out.println();
     }
-    
+
+    enum DaysOff {
+        Thanksgiving, PresidentsDay, ValentinesDay
+    }
+
     public static class Prueba {
-        
-        public static void test012(){
+
+        public static void test017() {
+            var lista = new ArrayList<Padre>();
+            lista.add(new Padre(1, 2));
+            lista.add(new Hijo(3, 4, 5));
+            lista.add(new EspirituSanto(6, 7, 8));
+
+            for (Padre objeto : lista) {
+                objeto.nothing();
+            }
+
+            Hijo father = new EspirituSanto(2, 2, 2);
+            ((Hijo) (father)).nothing();
+            ((Padre) (father)).nothing();
+        }
+
+        int a;
+
+        public void f() {
+            a = 0;
+        }
+
+        public static void test016() {
+
+            StringBuilder sb1 = new StringBuilder("Hola");
+            StringBuilder sb2 = new StringBuilder("Adios");
+            System.out.println(sb1.toString());
+            System.out.println(sb2.toString());
+
+            sb1.setLength(0);
+            sb1.append(sb2.toString());
+
+            System.out.println("\n----------------------------\n");
+
+            System.out.println(sb1.toString());
+            System.out.println(sb2.toString());
+
+            sb2.append(" SRP");
+
+            System.out.println("\n----------------------------\n");
+
+            System.out.println(sb1.toString());
+            System.out.println(sb2.toString());
+        }
+
+        public static void test015() {
+            Robot robot = new Robot();
+            robot.doSomething();
+            Robot robot2 = new Robot();
+            robot2.doSomething();
+
+            robot.doSomething();
+            robot2.doSomething();
+        }
+
+        public static void test014() {
+
+            /*Pintura pintura = new Pintura();
+            Color color = new Color((short) 1, (short) 2, (short) 3);
+            
+            pintura.setColor(color);
+            
+            System.out.println(pintura.getColor().getR());*/
+        }
+
+        public static void test013() {
+            Color color = new Color((short) 1, (short) 2, (short) 3);
+            short je = color.getG();
+            byte be = (byte) color.getB();
+            int erre = color.getR();
+            System.out.println("Color antes: " + erre + ", " + je + ", " + be);
+            color.setR((short) 9);
+            System.out.println("Color despues: " + color.getR() + ", " + je + ", " + be);
+        }
+
+        public static void test012() {
             Random rnd = new Random(System.currentTimeMillis());
             System.out.println(rnd.nextInt() % 2 == 0);
         }
