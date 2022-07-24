@@ -1,15 +1,19 @@
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/interfaces/Vehiculo.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/PruebasHerencia.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/interfaces/Fluido.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/clases/direccion/Direccion.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/clases/personas/Cuenta.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/clases/direccion/EntidadFederativa.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Canine.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/clases/perfil/TipoCuenta.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/HerenciaRobot.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/settings/globals/Global.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/utilerias/GeneraCurp.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/HerenciaMultiple.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/database/Conexion.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Color.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Bottle.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Padre.java
-/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/settings/globals/Diccionary.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Pintura.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/PseudoMain.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Camion.java
@@ -18,6 +22,7 @@
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/PlayerRankingComparator.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Robot.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Hijo.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/bs/personas/PersonaBs.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/database/MySQL.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Player.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/database/dao/DataAccessObject.java
@@ -25,6 +30,8 @@
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/database/dao/DAOInitializationException.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/modelo/driver/DriverMySQL.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/ClassFluido.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/settings/globals/Dictionary.java
+/home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/paris/clases/personas/Persona.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/PlayerAgeComparator.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/Dinosaur.java
 /home/paris/Desktop/Git/J-006-PersonalProject/Paris/src/main/java/com/test/main/classes/EspirituSanto.java

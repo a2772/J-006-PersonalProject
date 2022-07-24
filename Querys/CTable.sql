@@ -33,6 +33,15 @@ CREATE TABLE datos_personales(
     fecha_nacimiento DATE NOT NULL,
     sexo VARCHAR (6) NOT NULL,
     direccion int,
+    tipo_cuenta int,
     curp VARCHAR(18),
-    FOREIGN KEY (direccion) REFERENCES direccion(id)
+    FOREIGN KEY (direccion) REFERENCES direccion(id),
+    FOREIGN KEY (tipo_cuenta) REFERENCES tipo_cuenta(id)
+);
+
+CREATE TABLE cuenta(
+    email VARCHAR(35) PRIMARY KEY,
+    passwd VARCHAR(20) NOT NULL,
+    datos_personales int,
+    FOREIGN KEY (datos_personales) REFERENCES datos_personales(id)
 );

@@ -1,5 +1,7 @@
 package com.test.main;
 
+import com.paris.bs.personas.PersonaBs;
+import com.paris.modelo.utilerias.GeneraCurp;
 import com.test.main.classes.Airplane;
 import com.test.main.classes.Camion;
 import com.test.main.classes.Color;
@@ -15,6 +17,7 @@ import com.test.main.classes.VehiculoCarga;
 import com.test.main.interfaces.Vehiculo;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,8 +34,8 @@ public class PseudoMain extends PruebasHerencia {
     public int a;
 
     public static void main(String[] data) {
-        PseudoMain ps = new PseudoMain();
-        System.out.println();
+        String nombre = PersonaBs.obtenPersona(1).getNombre();
+        System.out.println(nombre);
     }
 
     enum DaysOff {

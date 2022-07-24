@@ -1,0 +1,1 @@
+CALL obten_persona(2,null);
