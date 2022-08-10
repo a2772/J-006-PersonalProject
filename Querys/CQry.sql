@@ -6,5 +6,4 @@ INSERT INTO direccion (entidad,alcaldia,colonia,calle,num_ext,cp) VALUES
 	(9, 'Alcaldia A', 'Colonia A', 'Calle A', 2, '97666');
 INSERT INTO datos_personales(nombre, primer_apellido, segundo_apellido, fecha_nacimiento, sexo, direccion, curp, tipo_cuenta) VALUES
 	('Paris', 'Ramírez', 'Saldaña', '2001-05-27', 'Hombre', 1, null,1);
-
-
+INSERT INTO cuenta(email,passwd, datos_personales) VALUES ('paris.140815@gmail.com', 'unoSencill0Pl0X', 1);

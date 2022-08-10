@@ -9,24 +9,9 @@ package com.paris.clases.personas;
  * @author paris
  */
 public class Cuenta {
-    private int id;
     private String email;
     private String passwd;
-
-    /**
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    
     /**
      * @return the email
      */

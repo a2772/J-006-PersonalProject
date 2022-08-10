@@ -1,6 +1,8 @@
 package com.test.main;
 
+import com.paris.bd.personas.PersonaBd;
 import com.paris.bs.personas.PersonaBs;
+import com.paris.clases.personas.Persona;
 import com.paris.modelo.utilerias.GeneraCurp;
 import com.test.main.classes.Airplane;
 import com.test.main.classes.Camion;
@@ -34,8 +36,8 @@ public class PseudoMain extends PruebasHerencia {
     public int a;
 
     public static void main(String[] data) {
-        String nombre = PersonaBs.obtenPersona(1).getNombre();
-        System.out.println(nombre);
+        //CALL obten_persona(1,null);
+        PersonaBs.obtenPersona(1);
     }
 
     enum DaysOff {

@@ -15,7 +15,7 @@ BEGIN
 		INNER JOIN cat_entidad_federativa cef ON d.entidad = cef.id
 		LEFT JOIN cuenta c ON c.datos_personales = dp.id
 	WHERE
-		(email_invc IS NOT NULL OR id_inin) AND
+		(email_invc IS NOT NULL OR id_inin IS NOT NULL) AND
 		IF(id_inin IS NOT NULL, id_inin = dp.id, TRUE) AND
         IF(email_invc IS NOT NULL, c.email = email_invc, TRUE)
     ;
